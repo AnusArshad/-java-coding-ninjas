@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Solution {
+
+	public static int FTC(int F){
+        int C = ((F-32)*5)/9;
+        return C;
+    }
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+        Scanner sc = new Scanner(System.in);
+        int SF = sc.nextInt();
+        int EF = sc.nextInt();
+        int gap = sc.nextInt();
+        
+        for(int i=SF;i<=EF;i++){
+            System.out.println(i+" "+FTC(i));
+            i+=gap-1;
+        }
+        
+
+		
+	}
+
+}
